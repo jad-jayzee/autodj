@@ -2,3 +2,6 @@
 *.log
 node_modules/
 *.zip
+
+# internal dev docs - local only, not published
+docs/
