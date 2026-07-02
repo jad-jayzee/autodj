@@ -4,7 +4,7 @@
   "author": "Jad",
   "version": "1.0.0",
   "homepage_url": "https://github.com/jad-jayzee",
-  "description": "Auto-DJ for YouTube Music: seeks each track's most-replayed peak and crossfades between two decks, with an endless radio queue and a live effects rack.",
+  "description": "Plays the best part of every YouTube Music song and smoothly blends into the next, like your own nonstop DJ.",
   "permissions": ["storage"],
   "host_permissions": ["https://www.youtube.com/*", "https://music.youtube.com/*"],
   "icons": {

@@ -3,9 +3,14 @@
 by [Jad](https://github.com/jad-jayzee) · v1.0.0
 
 
-A Chrome extension (MV3) that turns YouTube Music into an auto-DJ with true
-overlapping crossfades, best-part seeking, an endless radio queue, and a live
-effects rack. Runs on your logged-in account, so Premium applies (no ads).
+**Plays the best part of every song and smoothly blends into the next - like
+your own nonstop DJ.**
+
+A Chrome extension (MV3) for YouTube Music: it finds the most-replayed moment
+(the hook / drop) of each track, plays it, and crossfades into the next song
+while an endless radio queue keeps the vibe going. Optional live effects
+(slowed, reverb, lo-fi, 8D, and more). Runs on your logged-in account, so
+Premium applies (no ads).
 
 ## What it does
 
