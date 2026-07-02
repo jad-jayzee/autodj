@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "AutoDJ for YouTube Music",
+  "author": "Jad",
+  "version": "1.0.0",
+  "homepage_url": "https://github.com/jad-jayzee",
+  "description": "Auto-DJ for YouTube Music: seeks each track's most-replayed peak and crossfades between two decks, with an endless radio queue and a live effects rack.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.youtube.com/*", "https://music.youtube.com/*"],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["bridge.js"],
+      "run_at": "document_idle",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["player.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+  "web_accessible_resources": [
+    { "resources": ["rain.m4a"], "matches": ["https://music.youtube.com/*"] }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AutoDJ",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
